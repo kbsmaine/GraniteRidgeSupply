@@ -1,5 +1,5 @@
-// Placeholder catalog (CJ-ready)
-// Replace this data with CJ product imports or a backend-fed JSON list.
+// Placeholder catalog (inventory-ready)
+// Replace this data with inventory product imports or a backend-fed JSON list.
 
 const CATALOG = [
   { id: "edc-01", name: "RidgeLine Folding Utility", category: "edc", price: 39.99, tag: "EDC" },
