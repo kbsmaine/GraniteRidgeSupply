@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop | Granite Ridge Supply</title>
+  <meta name="description" content="Shop utility and outdoor blades with clear specs and fast fulfillment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header compact">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Granite Ridge Supply home">
+        <span class="brand-mark">GR</span>
+        <span class="brand-text">
+          <span class="brand-name">Granite Ridge Supply</span>
+          <span class="brand-tag">Utility • Outdoor • EDC</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Support</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-16h0Zm0 20h0ZM4 12h0Zm16 0h0ZM5.6 5.6h0Zm12.8 12.8h0ZM5.6 18.4h0Zm12.8-12.8h0"/></svg>
+        </button>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="shop.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Support</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="shop-head">
+        <div>
+          <h1 class="page-title">Shop</h1>
+          <p class="muted">Search, filter, and scale this catalog with CJ Dropshipping inventory later.</p>
+        </div>
+        <div class="shop-tools">
+          <div class="search">
+            <input id="q" type="search" placeholder="Search (e.g., 'folding', 'EDC', 'sheath')" aria-label="Search products" />
+          </div>
+          <select id="cat" class="select" aria-label="Category filter">
+            <option value="all">All categories</option>
+            <option value="edc">EDC</option>
+            <option value="outdoor">Outdoor</option>
+            <option value="utility">Utility</option>
+            <option value="gear">Gear</option>
+          </select>
+          <select id="sort" class="select" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="low">Price: Low → High</option>
+            <option value="high">Price: High → Low</option>
+            <option value="az">Name: A → Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid cards" id="productGrid"></div>
+
+      <div class="notice">
+        <strong>Ready for CJ:</strong> Replace the placeholder data in <code>assets/js/catalog.js</code> with CJ product data
+        (or wire it to your backend that talks to CJ’s API).
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <small class="muted">© 2026 Granite Ridge Supply</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/catalog.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
